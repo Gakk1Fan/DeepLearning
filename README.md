@@ -1,5 +1,6 @@
 # DeepLearning
-学习DeepLeaning的一些想法
+学习DeepLeaning的一些想法  
+数学公式无法显示的请下载[MathJax Plugin for Github插件](https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima)（Chrome浏览器）
 
 |#|内容|代码|
 |:-:|:-:|:-:|
