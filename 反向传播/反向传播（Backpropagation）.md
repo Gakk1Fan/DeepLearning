@@ -2,9 +2,9 @@
 
 [课程链接](https://www.youtube.com/watch?v=ibJpTrp5mcE)
 
-![image-20220130205309131](/Users/shisanyue/Desktop/笔记/深度学习/反向传播/images/图1.png)
+![图1](https://github.com/Gakk1Fan/DeepLearning/blob/main/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/images/%E5%9B%BE1.png)
 
-![image-20220130205705255](/Users/shisanyue/Desktop/笔记/深度学习/反向传播/images/图2.png)
+![图2](https://github.com/Gakk1Fan/DeepLearning/blob/main/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/images/%E5%9B%BE2.png)
 
 
 
@@ -16,19 +16,19 @@
 
 以下是更多Forward pass的例子
 
-![image-20220130211407626](/Users/shisanyue/Desktop/笔记/深度学习/反向传播/images/图3.png)
+![图3](https://github.com/Gakk1Fan/DeepLearning/blob/main/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/images/%E5%9B%BE3.png)
 
 
 
 下面来看看Backward pass
 
-![image-20220130212447886](/Users/shisanyue/Desktop/笔记/深度学习/反向传播/images/图4.png)
+![图4](https://github.com/Gakk1Fan/DeepLearning/blob/main/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/images/%E5%9B%BE4.png)
 
 其中$a = \sigma(z)$，所以$\frac{\partial a}{\partial z} = \sigma'(z)$
 
 这里我们假设如果$\frac{\partial C}{\partial z'}$和$\frac{\partial C}{\partial z''}$算出来了
 
-![image-20220130213019995](/Users/shisanyue/Desktop/笔记/深度学习/反向传播/images/图5.png)
+![图5](https://github.com/Gakk1Fan/DeepLearning/blob/main/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/images/%E5%9B%BE5.png)
 
 问题就转换成为如何计算$\frac{\partial C}{\partial z'}$和$\frac{\partial C}{\partial z''}$
 
@@ -40,13 +40,13 @@
 
 **Case1**：$\frac{\partial C}{\partial z'}$和$\frac{\partial C}{\partial z''}$是Output Layer
 
-![image-20220130233918380](/Users/shisanyue/Desktop/笔记/深度学习/反向传播/images/图6.png)
+![图6](https://github.com/Gakk1Fan/DeepLearning/blob/main/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/images/%E5%9B%BE6.png)
 
 
 
 **Case2**:$\frac{\partial C}{\partial z'}$和$\frac{\partial C}{\partial z''}$不是Output Layer
 
-![image-20220130234517476](/Users/shisanyue/Desktop/笔记/深度学习/反向传播/images/图7.png)
+![图7](https://github.com/Gakk1Fan/DeepLearning/blob/main/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/images/%E5%9B%BE7.png)
 
 从Output Layer从前往后开始算
 
@@ -56,9 +56,9 @@
 
 **Backward pass**：建立一个反向的神经网络
 
-![image-20220130234810471](/Users/shisanyue/Desktop/笔记/深度学习/反向传播/images/图8.png)
+![图8](https://github.com/Gakk1Fan/DeepLearning/blob/main/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/images/%E5%9B%BE8.png)
 
-![image-20220130235038349](/Users/shisanyue/Desktop/笔记/深度学习/反向传播/images/图9.png)
+![图9](https://github.com/Gakk1Fan/DeepLearning/blob/main/%E5%8F%8D%E5%90%91%E4%BC%A0%E6%92%AD/images/%E5%9B%BE9.png)
 
 **总结**
 
